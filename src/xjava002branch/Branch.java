@@ -44,9 +44,73 @@ public class Branch {
         System.out.println("3 + 5 = " + result);
 
         // 循环控制
-        for(int i = 0; i < 10; i++) {
-            System.out.println(i);
+        for (int i = 0; i < 10; i++) {
+            System.out.println("for: " + i);
         }
 
+        // while 循环
+        int i = 0;
+        while (i < 10) {
+            System.out.println("hi: " + i);
+            i++;
+        }
+
+        // do while 循环
+        int j = 0;
+        do {
+            System.out.println("do: " + j);
+            j++;
+        } while (j < 10);
+
+        // 打印三角
+        for (int k = 0; k < 10; k++) {
+            if (k % 2 == 0) {
+                continue;
+            }
+            for (int m = 0; m < (10 - k) / 2; m++) {
+                System.out.print(" ");
+            }
+            for (int l = 10 - k; l < 10; l++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // int layer = 7;
+        // for (int x = 1; x <= layer; x++) {
+        // for (int w = 1; w <= layer - x; w++) {
+        // System.out.print(" ");
+        // }
+
+        // for (int y = 1; y <= (x - 1) * 2 + 1; y++) {
+        // System.out.print("*");
+        // }
+
+        // System.out.println();
+        // }
+
+        // 镂空
+        int layer = 7;
+        for (int x = 1; x <= layer; x++) {
+            for (int w = 1; w <= layer - x; w++) {
+                System.out.print(" ");
+            }
+
+            for (int y = 1; y <= (x - 1) * 2 + 1; y++) {
+                if (x == 1 || x == layer) {
+
+                    System.out.print("*");
+                } else {
+                    if (y == 1 || y == (x - 1) * 2 + 1) {
+                        System.out.print("*");
+
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
+            }
+
+            System.out.println();
+        }
     }
 }
