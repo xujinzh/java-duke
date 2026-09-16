@@ -29,6 +29,9 @@ public class Class {
         cat1.jiSuan();
         int result = cat1.jiSuan(100);
         System.out.println(result);
+
+        cat1.add(1, 2);
+        System.out.println(cat1.add2(1, 2));
     }
 }
 
@@ -38,6 +41,20 @@ class Cat {
     String name;
     String color;
     Master master;
+
+    // 构造方法
+    public Cat() {
+
+    }
+
+    public Cat(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
+    public Cat(int age){
+        this.age = age;
+    }
 
     @Override
     public String toString() {
@@ -64,6 +81,15 @@ class Cat {
             result += i;
         }
         return result;
+    }
+
+    public void add(int num1, int num2) {
+        int result = num1 + num2;
+        System.out.println(result);
+    }
+
+    public int add2(int num1, int num2) {
+        return num1 + num2;
     }
 }
 
