@@ -14,8 +14,8 @@ package xjava007class04;
 */
 public class Class {
     public static void main(String[] args) {
-        Stu s1 = new Stu(18, "xiaoming", 10000);
-        Stu s2 = new Stu(18, "xiaohua", 10000);
+        Stu s1 = new Stu(18, "xiaoming", 10_000);
+        Stu s2 = new Stu(18, "xiaohua", 10_000);
         int totalFee = Stu.getTotalFee();
         System.out.println("total fee: " + totalFee);
     }
