@@ -20,6 +20,8 @@ package xjava011overloadOverride;
  * 那么我们就说子类的这个方法覆盖了父类的方法。
  * 
  * 注意，不包含访问修饰符。但是子类的方法的访问修饰符不能比父类的更严格，可以更公开。
+ * 即，子类方法不能缩小父类方法的权限。反之，可以。子类方法可以扩大父类方法的权限。
+ * 
  */
 public class Over {
     public static void main(String[] args) {
