@@ -15,6 +15,7 @@ public class Extends {
         cs.printName();
 
         Window w = new Window();
+        w.getName();
         
     }
 }
@@ -24,7 +25,7 @@ class Stu {
     public String name;
     protected int age;
     int id;
-    private float fee;
+    // private float fee;
 
     public void printName() {
         System.out.println(this.name);

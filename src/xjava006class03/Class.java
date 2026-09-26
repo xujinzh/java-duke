@@ -16,10 +16,12 @@ public class Class {
     }
 
     public static void main(String[] args) {
-        Class c1 = new Class();
+        new Class();
+        // Class c1 = new Class();
         System.out.println(Class.i);
 
-        Class c2 = new Class();
+        new Class();
+        // Class c2 = new Class();
         System.out.println(Class.i);
     }
 }

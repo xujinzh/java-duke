@@ -49,12 +49,12 @@ public class Modifier {
 class Clerk{
     public String name;
     // private修饰符只能在类内部被访问
-    private int age;
+    // private int age;
     private float salary;
 
     public Clerk(String name, int age, float salary) {
         this.name = name;
-        this.age = age;
+        // this.age = age;
         this.salary = salary;
     }
 
